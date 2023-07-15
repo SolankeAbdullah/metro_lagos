@@ -54,33 +54,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 },
                 children: [
                   // Replace these containers with your actual onboarding screens
-                  Container(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          height: 368,
-                          width: 341,
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                'assets/images/train_ticket_image.png',
-                                height: 250,
-                                width: 250,
-                              ),
-                              const SizedBox(height: 16.0),
-                              const Text(
-                                'Book Train Ticket!',
-                                style: TextStyle(
-                                  fontSize: 24.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
+                  Scaffold(
+                    backgroundColor: const Color(0xFFF8F8F8),
+                    body: Padding(
+                      padding: const EdgeInsets.all(17.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 375,
+                            width: 341,
+                            color: Color(0xFFC4C4C4),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Container(
